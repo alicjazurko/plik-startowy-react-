@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pierwszy komponent w React.js</title>
+  <script src="https://unpkg.com/react/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/babel-standalone/babel.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="text/babel">
+    // ReactDOM.render(
+    //   <h1>Witaj, świecie!</h1>,
+    //   document.getElementById('app')
+    // );
+
+
+    function MojKomponent({tittle, text}) { //Poropsy
+  return (
+    <div>
+      <dialog open>
+        <h1>{tittle}</h1>
+        <p>{text}</p>
+      </dialog>
+    </div>
+  );
+}
+  ReactDOM.render(
+    <MojKomponent tittle = "tytuł" text = "trrrreść" />,
+    document.getElementById('app')
+  );
+  </script>
+</body>
+
+</html>
